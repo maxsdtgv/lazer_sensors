@@ -1,0 +1,18 @@
+main
+	__CC2DW
+	UART1_Init
+	CANInitialize
+		CANSetOperationMode
+		CANSetBaudRate
+		CANSetMask
+			CANIDToRegs
+		CANSetFilter
+			CANIDToRegs
+	CANSetOperationMode
+	UART1_Write_Text
+		UART1_Write
+	UART1_Write
+	CANRead
+		RegsToCANID
+	WordToStr
+		Div_16X16_U

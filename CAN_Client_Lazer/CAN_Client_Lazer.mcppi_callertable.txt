@@ -1,0 +1,13 @@
+main
+	CANInitialize
+		CANSetOperationMode
+		CANSetBaudRate
+		CANSetMask
+			CANIDToRegs
+		CANSetFilter
+			CANIDToRegs
+	CANSetOperationMode
+	ADC_Read
+		Delay_22us
+	CANWrite
+		CANIDToRegs
